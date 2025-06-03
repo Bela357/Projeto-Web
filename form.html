@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pokemon </title>
+</head>
+<body>
+    <h1>POKEMONS PRIMEIRA GERAÇÃO</h1>
+
+    <form action="/enviar" method="post">
+        <label for="nome">Nome do pokemon:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="tipo1">Tipo primário:</label>
+        <input type="text" id="tipo1" name="tipo1" required><br><br>
+
+        <label for="tipo2">Tipo secundário:</label>
+        <input type="text" id="tipo2" name="tipo2"><br><br>
+
+        <label for="faseEvolucao">Fase de evolução:</label>
+        <input type="text" id="faseEvolucao" name="faseEvolucao" required><br><br>
+
+        <label for="numPokedex">Número na Pokedex:</label>
+        <input type="number" id="numPokedex" name="numPokedex" required>
+    </form>
+</body>
+</html>

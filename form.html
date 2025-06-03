@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de pokemon </title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/188/188987.png" type="image/png">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
       <style>
     @font-face {
       font-family: 'Pokemon';
       src: url('pokemon_solid.ttf') format('truetype');
+    }
+        body {
+      background: url('https://i.imgur.com/O7ZWigt.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
 
     .pokemon-text {
@@ -18,30 +24,56 @@
       color: #FFCB05;
       text-shadow: 2px 2px #3D7DCA;
     }
+    .glass-container {
+      background: rgba(0, 0, 0, 0.5); /* semi-transparente */
+      backdrop-filter: blur(8px);     /* efeito fosco */
+      -webkit-backdrop-filter: blur(8px); /* suporte Safari */
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    
+
   </style>
 
 </head>
-<body class="bg-dark text-center py-5">
+<body class="text-center py-5">
     <div class="container">
+        <img src="https://img.icons8.com/color/96/000000/pokeball-2.png" alt="Pokebola" class="mb-4">
         <h1 class="pokemon-text">POKEMONS PRIMEIRA GERAÇÃO</h1>
 
-        <form action="/enviar" method="post">
-            <label for="nome" class="text-light">Nome do pokemon:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+        <form action="/enviar" method="post" class="glass-container text-start mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome do Pokémon</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
 
-            <label for="tipo1" class="text-light">Tipo primário:</label>
-            <input type="text" id="tipo1" name="tipo1" required><br><br>
+            <div class="mb-3">
+                <label for="tipo1" class="form-label">Tipo primário</label>
+                <input type="text" id="tipo1" name="tipo1" class="form-control" required>
+            </div>
 
-            <label for="tipo2" class="text-light">Tipo secundário:</label>
-            <input type="text" id="tipo2" name="tipo2"><br><br>
+            <div class="mb-3">
+                <label for="tipo2" class="form-label">Tipo secundário</label>
+                <input type="text" id="tipo2" name="tipo2" class="form-control">
+            </div>
 
-            <label for="faseEvolucao" class="text-light">Fase de evolução:</label>
-            <input type="number" id="faseEvolucao" name="faseEvolucao" required><br><br>
+            <div class="mb-3">
+                <label for="faseEvolucao" class="form-label">Fase de evolução</label>
+                <input type="number" id="faseEvolucao" name="faseEvolucao" class="form-control" required>
+            </div>
 
-            <label for="numPokedex" class="text-light">Número na Pokedex:</label>
-            <input type="number" id="numPokedex" name="numPokedex" required><br><br>
+            <div class="mb-3">
+                <label for="numPokedex" class="form-label">Número na Pokédex</label>
+                <input type="number" id="numPokedex" name="numPokedex" class="form-control" required>
+            </div>
 
-            <input type="submit" value="Enviar">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-warning fw-bold">Enviar Pokémon</button>
+            </div>
         </form>
     </div>
 </body>

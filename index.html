@@ -1,82 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Principal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: url('https://i.imgur.com/O7ZWigt.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Verdana', sans-serif;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .categorias {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .categoria {
+      max-width: 250px;
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px solid #333;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .categoria:hover {
+      transform: scale(1.05);
+    }
+
+    .categoria h3 {
+      font-family: 'Impact', sans-serif;
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .categoria .icone {
+      font-size: 50px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .btn-acessar {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .planta { border-color: green; }
+    .planta .icone { color: green; }
+
+    .fogo { border-color: red; }
+    .fogo .icone { color: red; }
+
+    .agua { border-color: blue; }
+    .agua .icone { color: blue; }
+
+    .normal { border-color: gray; }
+    .normal .icone { color: gray; }
+
+    .eletrico { border-color: rgb(235, 223, 47); }
+    .eletrico .icone { color: rgb(235, 223, 47)}
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body class="p-4">
-    <h1>Site Pokémon</h1>
-    <!-----Carrossel----->
-    <div class="carousel-container">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://img.odcdn.com.br/wp-content/uploads/2025/03/pokemon-tipo-1920x1080.jpg" class="d-block w-100" alt="Pokémon Tipo">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://revolucaonerd.com/wordpress/wp-content/files/revolucaonerd.com/2024/08/pokemons-de-alola-sao-diferentes-1024x683.webp" class="d-block w-100" alt="Pokémons de Alola">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpapers.com/images/hd/all-pokemon-pictures-1600-x-1000-tqgk66rp7cllxgrl.jpg" class="d-block w-100" alt="Pokémon">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+<body>
+
+  <h1>Pokémons Primeira Geração</h1>
+  <h2>Escolha a categoria...</h2>
+
+  <div class="categorias">
+
+     <div class="categoria planta">
+      <i class="fas fa-leaf icone"></i>
+      <h3>Planta</h3>
+      <button type="button" class="btn btn-success btn-acessar">
+        Acesse
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
 
-    <!----Pokémon---->
-    <div class="card mt-4" style="width: 300px;">
-        <img src="https://static.wikia.nocookie.net/turma-do-kamil/images/5/53/A5f7322cdf21c4de36c7e2c48c926e4c433fe5e4_hq.jpg/revision/latest/scale-to-width-down/846?cb=20240814003202&path-prefix=pt-br" class="card-img-top" alt="Pikachu">
-        <div class="card-body">
-            <h5 class="card-title">Pikachu</h5>
-            <p class="card-text">Um dos Pokémon mais famosos do mundo!</p>
-            <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                    Mais Informações...
-                </button>
-            </p>
-            <div style="min-height: 120px;">
-                <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                    <div class="card card-body" style="width: 250px;">
-                        <p><strong>Tipo:</strong> Elétrico</p>
-                        <p><strong>Geração:</strong> 1</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="categoria fogo">
+      <i class="fas fa-fire icone"></i>
+      <h3>Fogo</h3>
+      <button type="button" class="btn btn-danger btn-acessar">
+        Acesse
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
 
-    <!---Pokemon 2---->
-    <div class="card mt-4" style="width: 300px;">
-        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png" class="card-img-top" alt="Pikachu">
-        <div class="card-body">
-            <h5 class="card-title">Charizard</h5>
-            <p class="card-text">seila</p>
-            <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                    Mais Informações...
-                </button>
-            </p>
-            <div style="min-height: 120px;">
-                <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                    <div class="card card-body" style="width: 250px;">
-                        <p><strong>Tipo:</strong>   </p>
-                        <p><strong>Geração:</strong>1</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  
+    <div class="categoria agua">
+      <i class="fas fa-tint icone"></i>
+      <h3>Água</h3>
+      <button type="button" class="btn btn-primary btn-acessar">
+        Acesse
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="categoria normal">
+      <i class="fas fa-paw icone"></i>
+      <h3>Normal</h3>
+      <button type="button" class="btn btn-secondary btn-acessar">
+        Acesse
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    
+    <div class="categoria eletrico">
+        <i class="fas fa-bolt icone"></i>
+        <h3>Elétrico</h3>
+        <button type="button" class="btn btn-warning btn-acessar">
+            Acesse
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+  </div>
+
 </body>
 </html>

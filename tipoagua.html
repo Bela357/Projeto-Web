@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex - Squirtle</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg/1024px-Pok%C3%A9mon_Water_Type_Icon.svg.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pokedex-card {
+        background: #0288d1;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+    .pokedex-header {
+        background-color: #01579b;
+        padding: 10px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .pokedex-body {
+        padding: 15px;
+    }
+    .pokemon-img {
+        width: 120px;
+        margin-top: 10px;
+    }
+    .pokedex-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0288d1;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-4">
+  <div class="row g-4">
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Squirtle</h5>
+        </div>
+        <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-black-and-white/d/da/Pokemans_007.gif" 
+             class="pokemon-img mx-auto d-block" 
+             alt="Squirtle">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Água</p>
+          <p><strong>Tipo 2:</strong> —</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Evolução:</strong> Wartortle</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adicione mais colunas iguais para outros pokémons -->
+
+  </div>
+</div>
+
+
+  <footer>
+    &copy; 2025 Pokédex - Projeto Bootstrap
+  </footer>
+</body>
+
+</html>

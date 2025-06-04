@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Principal</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
@@ -13,11 +14,23 @@
       background-size: cover;
       color: white;
       font-family: 'Verdana', sans-serif;
+      padding-bottom: 100px; 
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 10px ;
     }
 
     h1, h2 {
       text-align: center;
       font-weight: 700;
+      color: rgb(238, 238, 134);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
 
@@ -64,6 +77,23 @@
       margin-top: 10px;
       font-weight: bold;
     }
+    .btn-link {
+      color: #333;
+      font-family:'Pokemon', sans-serif;
+    }
+    .mensagem{
+      color: black;
+      font-family:'Pokemon', sans-serif;
+    }
+
+    .frase-pergunta{
+      margin-top: 220px;
+      text-align: center;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: rgb(210, 210, 210);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
 
     .planta { border-color: green; }
     .planta .icone { color: green; }
@@ -98,6 +128,13 @@
         Acesse
         <i class="fas fa-arrow-right"></i>
       </button>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-planta">
+        Mostrar mais
+      </button>
+      
+      <div class="collapse" id="descricao-planta">
+        <p class="mensagem">Os pokémons da categoria Planta são conhecidos por sua conexão com a natureza, utilizando ataques de folhas e cipós.</p>
+      </div>
     </div>
 
     <div class="categoria fogo">
@@ -107,6 +144,13 @@
         Acesse
         <i class="fas fa-arrow-right"></i>
       </button>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-fogo">
+        Mostrar mais
+      </button>
+      
+      <div class="collapse" id="descricao-fogo">
+        <p class="mensagem">Os pokémons da categoria Fogo são poderosos e explosivos, com ataques baseados em chamas e calor.</p>
+      </div>
     </div>
 
     <div class="categoria agua">
@@ -116,6 +160,13 @@
         Acesse
         <i class="fas fa-arrow-right"></i>
       </button>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-agua">
+        Mostrar mais
+      </button>
+      
+      <div class="collapse" id="descricao-agua">
+        <p class="mensagem">Os pokémons de Água dominam os rios e oceanos, usando jatos e ondas para atacar seus oponentes.</p>
+      </div>
     </div>
 
     <div class="categoria normal">
@@ -125,6 +176,13 @@
         Acesse
         <i class="fas fa-arrow-right"></i>
       </button>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-normal">
+        Mostrar mais
+      </button>
+      
+      <div class="collapse" id="descricao-normal">
+        <p class="mensagem">Os pokémons da categoria Normal são versáteis e equilibrados, com habilidades diversas e adaptáveis.</p>
+      </div>
     </div>
     
     <div class="categoria eletrico">
@@ -134,9 +192,25 @@
             Acesse
             <i class="fas fa-arrow-right"></i>
         </button>
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-eletrico">
+        Mostrar mais
+      </button>
+      
+      <div class="collapse" id="descricao-eletrico">
+        <p class="mensagem">Os pokémons Elétricos acumulam energia e liberam choques poderosos para paralisar seus adversários.</p>
+      </div>
     </div>
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="frase">
+    <p class="frase-pergunta">Você conhece todos os 151 pokémons da primeira geração?</p>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2025 Projeto Pokémon | Desenvolvido por Giovana e Isabela</p>
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipo Elétrico</title>
+  <link rel="icon" href="imgpokemoneletrico/icon.webp" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+        background-color: #FFFDE7;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('imgpokemoneletrico/background_upscaled.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .pokedex-card {
+        background: rgba(255, 235, 59, 0.85); 
+        color: #F57F17; 
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pokedex-header {
+        background-color: #FBC02D; 
+        padding: 10px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .pokedex-body {
+        padding: 15px;
+    }
+
+    .pokemon-img {
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    .pokedex-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-voltar {
+        background-color: #FFD600; 
+        color: #212121;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-voltar:hover {
+        background-color: #FFEA00;
+        color: #212121;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #FFF176;
+      color: #424242;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body >
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-12 text-start">
+            <a href="index.html" class="btn btn-voltar">
+                ⬅ Voltar
+            </a>
+            </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Pikachu</h5>
+        </div>
+        <img src="imgpokemoneletrico/pikachu.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="pikachu">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Fase anterior:</strong> ——</p>
+          <p><strong>Evolução:</strong> Raichu</p>
+          <p><strong>Número na Pokedex:</strong> 025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Raichu</h5>
+        </div>
+        <img src="imgpokemoneletrico/raichu.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="raichu">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 2</p>
+          <p><strong>Fase anterior:</strong> Pikachu</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Magnemite</h5>
+        </div>
+        <img src="imgpokemoneletrico/magnemite.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="magnemite">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> Metálico</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Fase anterior:</strong> ——</p>
+          <p><strong>Evolução:</strong> Magneton</p>
+          <p><strong>Número na Pokedex:</strong> 081</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Magneton</h5>
+        </div>
+        <img src="imgpokemoneletrico/magneton.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="magneton">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> Metálico</p>
+          <p><strong>Fase:</strong> 2</p>
+          <p><strong>Fase anterior:</strong> Magnemite</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 082</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Voltorb</h5>
+        </div>
+        <img src="imgpokemoneletrico/voltorb.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="voltorb">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Fase anterior:</strong> ——</p>
+          <p><strong>Evolução:</strong> Electrode</p>
+          <p><strong>Número na Pokedex:</strong> 100</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Electrode</h5>
+        </div>
+        <img src="imgpokemoneletrico/electrode.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="electrode">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 2</p>
+          <p><strong>Fase anterior:</strong> Voltorb</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 101</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Electabuzz</h5>
+        </div>
+        <img src="imgpokemoneletrico/electabuzz.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="electabuzz">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Fase anterior:</strong> ——</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 125</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Jolteon</h5>
+        </div>
+        <img src="imgpokemoneletrico/jolteon.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="jolteon">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> ——</p>
+          <p><strong>Fase:</strong> 2</p>
+          <p><strong>Fase anterior:</strong> Eevee</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 135</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="pokedex-card">
+        <div class="pokedex-header">
+          <h5>Zapdos</h5>
+        </div>
+        <img src="imgpokemoneletrico/zapdos.png" 
+             class="pokemon-img mx-auto d-block" 
+             alt="zapdos">
+        <div class="pokedex-body text-center">
+          <p><strong>Tipo 1:</strong> Elétrico</p>
+          <p><strong>Tipo 2:</strong> Voador</p>
+          <p><strong>Fase:</strong> 1</p>
+          <p><strong>Fase anterior:</strong> ——</p>
+          <p><strong>Evolução:</strong> ——</p>
+          <p><strong>Número na Pokedex:</strong> 145</p>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    </div>
+</body>

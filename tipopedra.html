@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipo Fada</title>
+  <link rel="icon" href="imgpokemonpedra/icon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+        background-color: #e0f7fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('imgpokemonpedra/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .pokedex-card {
+        background: rgba(248, 187, 208, 0.85);
+        color: #5D3A6A;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+    .pokedex-header {
+        background-color: #FF69B4;
+        padding: 10px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .pokedex-body {
+        padding: 15px;
+    }
+    .pokemon-img {
+        width: 120px;
+        margin-top: 10px;
+    }
+    .pokedex-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-voltar {
+        background-color: #F06292;
+        color: white;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-voltar:hover {
+        background-color: #EC407A; 
+        color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color:#FFC1CC;
+      color:#FDFEFF;
+      margin-top: 40px;
+    }
+  </style>
+
+<body>
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-12 text-start">
+              <a href="index.html" class="btn btn-voltar">
+                  ⬅ Voltar
+              </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Geodude</h5>
+                </div>
+                <img src="imgpokemonpedra/Geodude.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Geodude">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Terrestre</p>
+                    <p><strong>Fase:</strong> 1</p>
+                    <p><strong>Fase anterior:</strong> ——</p>
+                    <p><strong>Evolução:</strong> Graveler</p>
+                    <p><strong>Número na Pokedex:</strong> 074</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Graveler</h5>
+                </div>
+                <img src="imgpokemonpedra/Graveler.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Graveler">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Terrestre</p>
+                    <p><strong>Fase:</strong> 2</p>
+                    <p><strong>Fase anterior:</strong> Geodude</p>
+                    <p><strong>Evolução:</strong> Golem</p>
+                    <p><strong>Número na Pokedex:</strong> 075</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Golem</h5>
+                </div>
+                <img src="imgpokemonpedra/Golem.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Golem">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Terrestre</p>
+                    <p><strong>Fase:</strong> 3</p>
+                    <p><strong>Fase anterior:</strong> Graveler</p>
+                    <p><strong>Evolução:</strong> ——</p>
+                    <p><strong>Número na Pokedex:</strong> 076</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Onix</h5>
+                </div>
+                <img src="imgpokemonpedra/Onix.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Onix">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Terrestre</p>
+                    <p><strong>Fase:</strong> 1</p>
+                    <p><strong>Fase anterior:</strong> ——</p>
+                    <p><strong>Evolução:</strong> ——</p>
+                    <p><strong>Número na Pokedex:</strong> 095</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Omanyte</h5>
+                </div>
+                <img src="imgpokemonpedra/Omanyte.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Omanyte">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Água</p>
+                    <p><strong>Fase:</strong> 1</p>
+                    <p><strong>Fase anterior:</strong> ——</p>
+                    <p><strong>Evolução:</strong> Omastar</p>
+                    <p><strong>Número na Pokedex:</strong> 138</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Omastar</h5>
+                </div>
+                <img src="imgpokemonpedra/Omastar.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Omastar">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Água</p>
+                    <p><strong>Fase:</strong> 2</p>
+                    <p><strong>Fase anterior:</strong> Omanyte</p>
+                    <p><strong>Evolução:</strong> ——</p>
+                    <p><strong>Número na Pokedex:</strong> 139</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Kabuto</h5>
+                </div>
+                <img src="imgpokemonpedra/Kabuto.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Kabuto">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Água</p>
+                    <p><strong>Fase:</strong> 1</p>
+                    <p><strong>Fase anterior:</strong> ——</p>
+                    <p><strong>Evolução:</strong> Kabutops</p>
+                    <p><strong>Número na Pokedex:</strong> 140</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Kabutops</h5>
+                </div>
+                <img src="imgpokemonpedra/Kabutops.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Kabutops">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Água</p>
+                    <p><strong>Fase:</strong> 2</p>
+                    <p><strong>Fase anterior:</strong> Kabuto</p>
+                    <p><strong>Evolução:</strong> ——</p>
+                    <p><strong>Número na Pokedex:</strong> 141</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="pokedex-card">
+                <div class="pokedex-header">
+                <h5>Aerodactyl</h5>
+                </div>
+                <img src="imgpokemonpedra/Aerodactyl.png" 
+                    class="pokemon-img mx-auto d-block" 
+                    alt="Aerodactyl">
+                <div class="pokedex-body text-center">
+                    <p><strong>Tipo 1:</strong> Pedra</p>
+                    <p><strong>Tipo 2:</strong> Voador</p>
+                    <p><strong>Fase:</strong> 1</p>
+                    <p><strong>Fase anterior:</strong> ——</p>
+                    <p><strong>Evolução:</strong> ——</p>
+                    <p><strong>Número na Pokedex:</strong> 142</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</body>

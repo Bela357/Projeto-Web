@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Página Principal</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="imgindex/icon.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Fonte estilo Pokémon -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
   <style>
     body {
-      background: url('https://i.imgur.com/O7ZWigt.png') no-repeat center center fixed;
+      background: url('imgforms/background.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
       font-family: 'Verdana', sans-serif;
-      padding-bottom: 100px; 
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #212529;
-      color: white;
-      text-align: center;
-      padding: 10px ;
+      padding-bottom: 100px;
     }
 
     h1, h2 {
       text-align: center;
-      font-weight: 700;
-      color: rgb(238, 238, 134);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-family: 'Press Start 2P', cursive;
+      font-size: 24px;
+      color: #FFD700;
+      text-shadow: 3px 3px 0 #2a2a2a;
+      margin-top: 20px;
     }
 
     .categorias {
@@ -44,22 +39,23 @@
 
     .categoria {
       max-width: 250px;
-      background: rgba(255, 255, 255, 0.85);
-      border: 2px solid #333;
-      border-radius: 15px;
+      border: 4px solid #333;
+      border-radius: 20px;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
     }
 
     .categoria:hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.6);
     }
 
     .categoria h3 {
-      font-family: 'Impact', sans-serif;
-      font-size: 1.5rem;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1rem;
       color: #333;
       margin-bottom: 15px;
     }
@@ -76,42 +72,235 @@
       gap: 8px;
       margin-top: 10px;
       font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
     }
+
     .btn-link {
       color: #333;
-      font-family:'Pokemon', sans-serif;
-    }
-    .mensagem{
-      color: black;
-      font-family:'Pokemon', sans-serif;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+      text-decoration: none;
     }
 
-    .frase-pergunta{
+    .btn-link:hover {
+      text-decoration: underline;
+    }
+
+    .mensagem {
+      color: black;
+      font-family: 'Verdana', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .frase-pergunta {
       margin-top: 220px;
       text-align: center;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 20px;
-      color: rgb(210, 210, 210);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      color: #FFFAFA;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
-    .planta { border-color: green; }
-    .planta .icone { color: green; }
+    /* CORES DOS CARDS DE CADA TIPO SE QUISER MUDAR */
 
-    .fogo { border-color: red; }
-    .fogo .icone { color: red; }
+    .planta    { background: rgba(144, 238, 144, 0.85); border-color: green;  } 
+    .fogo      { background: rgba(255, 160, 122, 0.85); border-color: red;    } 
+    .agua      { background: rgba(173, 216, 230, 0.85); border-color: blue;   } 
+    .normal    { background: rgba(211, 211, 211, 0.85); border-color: gray;   } 
+    .eletrico  { background: rgba(255, 255, 102, 0.85); border-color: #FFD700;} 
 
-    .agua { border-color: blue; }
-    .agua .icone { color: blue; }
+    .inseto    { background: rgba(189, 252, 201, 0.85); border-color: #A8B820;} 
+    .venenoso  { background: rgba(219, 112, 147, 0.85); border-color: #A040A0;} 
+    .terrestre { background: rgba(240, 230, 140, 0.85); border-color: #E0C068;} 
+    .fada      { background: rgba(255, 182, 193, 0.85); border-color: #EE99AC;} 
+    .lutador   { background: rgba(250, 128, 114, 0.85); border-color: #C03028;} 
+    .psiquico  { background: rgba(255, 182, 255, 0.85); border-color: #F85888;} 
+    .pedra     { background: rgba(205, 133, 63, 0.85);  border-color: #B8A038;} 
+    .fantasma  { background: rgba(147, 112, 219, 0.85); border-color: #705898;} 
+    .gelo      { background: rgba(176, 224, 230, 0.85); border-color: #98D8D8;} 
+    .dragao    { background: rgba(176, 144, 255, 0.85); border-color: #7038F8;} 
 
-    .normal { border-color: gray; }
-    .normal .icone { color: gray; }
+    /* COR DO FORMULARIO */
+    .form-link { background: rgba(144, 238, 250, 0.7); border-color: #00CED1; } 
+    .form-link .icone { color: #00CED1; }
 
-    .eletrico { border-color: rgb(235, 223, 47); }
-    .eletrico .icone { color: rgb(235, 223, 47)}
+    /* CORES DOS BOTOES 'ACESSAR'*/
+
+    .btn-planta {
+      background-color: #78C850;
+      color: rgb(0, 0, 0);
+      transition: background-color 0.3s ease;
+    }
+    .btn-planta:hover {
+      background-color: #9cd65a;
+      color: black;
+    }
+
+
+    .btn-fogo {
+      background-color: #F08030;
+      color: rgb(0, 0, 0);
+      transition: background-color 0.3s ease;
+    }
+    .btn-fogo:hover {
+      background-color: #f59b5a;
+      color: black;
+    }
+
+
+    .btn-agua {
+      background-color: #6890F0;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-agua:hover {
+      background-color: #85a7f5;
+      color: black;
+    }
+
+
+    .btn-normal {
+      background-color: grey;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-normal:hover {
+      background-color: #c3c3a3;
+      color: black;
+    }
+
+
+    .btn-eletrico {
+      background-color: #F8D030;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-eletrico:hover {
+      background-color: #ffe34d;
+      color: black;
+    }
+
+    .btn-fantasma {
+      background-color: #705898;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-fantasma:hover {
+      background-color: #8a70b3;
+      color: black;
+    }
+
+
+    .btn-inseto {
+      background-color: #A8B820;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-inseto:hover {
+      background-color: #c0d142;
+      color: black;
+    }
+
+
+    .btn-venenoso {
+      background-color: #A040A0;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-venenoso:hover {
+      background-color: #bb5abb;
+      color: black;
+    }
+
+
+    .btn-terrestre {
+      background-color: #E0C068;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-terrestre:hover {
+      background-color: #e8cf82;
+      color: black;
+    }
+
+
+    .btn-fada {
+      background-color: #EE99AC;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-fada:hover {
+      background-color: #f4b1c0;
+      color: black;
+    }
+
+
+    .btn-lutador {
+      background-color: #C03028;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-lutador:hover {
+      background-color: #d14a44;
+      color: black;
+    }
+
+
+    .btn-psiquico {
+      background-color: #F85888;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-psiquico:hover {
+      background-color: #f97aa0;
+    }
+
+
+    .btn-pedra {
+      background-color: #B8A038;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-pedra:hover {
+      background-color: #d0b152;
+      color: black;
+    }
+
+
+    .btn-gelo {
+      background-color: #98D8D8;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-gelo:hover {
+      background-color: #b2e5e5;
+      color: black;
+    }
+
+
+    .btn-dragao {
+      background-color: #7038F8;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .btn-dragao:hover {
+      background-color: #8e62f9;
+      color: black;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -121,96 +310,245 @@
 
   <div class="categorias">
 
-     <div class="categoria planta">
+    <div class="categoria planta">
       <i class="fas fa-leaf icone"></i>
       <h3>Planta</h3>
-      <button type="button" class="btn btn-success btn-acessar">
-        Acesse
-        <i class="fas fa-arrow-right"></i>
-      </button>
+      <a href="tipoplanta.html" class="btn btn-planta btn-acessar">
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>
       <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-planta">
         Mostrar mais
       </button>
-      
       <div class="collapse" id="descricao-planta">
-        <p class="mensagem">Os pokémons da categoria Planta são conhecidos por sua conexão com a natureza, utilizando ataques de folhas e cipós.</p>
+        <p class="mensagem">Pokémons Planta usam ataques baseados em folhas e cipós para dominar o campo de batalha.</p>
       </div>
     </div>
 
     <div class="categoria fogo">
       <i class="fas fa-fire icone"></i>
       <h3>Fogo</h3>
-      <button type="button" class="btn btn-danger btn-acessar">
-        Acesse
-        <i class="fas fa-arrow-right"></i>
-      </button>
+      <a href="tipofogo.html" class="btn btn-fogo btn-acessar">
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>
       <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-fogo">
         Mostrar mais
       </button>
-      
       <div class="collapse" id="descricao-fogo">
-        <p class="mensagem">Os pokémons da categoria Fogo são poderosos e explosivos, com ataques baseados em chamas e calor.</p>
+        <p class="mensagem">Pokémons Fogo canalizam chamas para causar danos massivos e intimidar adversários.</p>
       </div>
     </div>
 
     <div class="categoria agua">
       <i class="fas fa-tint icone"></i>
       <h3>Água</h3>
-      <button type="button" class="btn btn-primary btn-acessar">
-        Acesse
-        <i class="fas fa-arrow-right"></i>
-      </button>
+      <a href="tipoagua.html"  class="btn btn-agua btn-acessar">
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>
       <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-agua">
         Mostrar mais
       </button>
-      
       <div class="collapse" id="descricao-agua">
-        <p class="mensagem">Os pokémons de Água dominam os rios e oceanos, usando jatos e ondas para atacar seus oponentes.</p>
+        <p class="mensagem">Pokémons Água dominam rios e oceanos, usando jatos e ondas para atacar seus oponentes.</p>
       </div>
     </div>
 
     <div class="categoria normal">
       <i class="fas fa-paw icone"></i>
       <h3>Normal</h3>
-      <button type="button" class="btn btn-secondary btn-acessar">
-        Acesse
-        <i class="fas fa-arrow-right"></i>
-      </button>
+      <a href="tiponormal.html" class="btn btn-normal btn-acessar"> 
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>
       <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-normal">
         Mostrar mais
       </button>
-      
       <div class="collapse" id="descricao-normal">
-        <p class="mensagem">Os pokémons da categoria Normal são versáteis e equilibrados, com habilidades diversas e adaptáveis.</p>
+        <p class="mensagem">Pokémons Normal são versáteis, com habilidades equilibradas e adaptáveis a qualquer batalha.</p>
       </div>
     </div>
-    
+
+    <!-- Categoria Elétrico -->
     <div class="categoria eletrico">
-        <i class="fas fa-bolt icone"></i>
-        <h3>Elétrico</h3>
-        <button type="button" class="btn btn-warning btn-acessar">
-            Acesse
-            <i class="fas fa-arrow-right"></i>
-        </button>
-        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-eletrico">
+      <i class="fas fa-bolt icone"></i>
+      <h3>Elétrico</h3>
+      <a href="tipoeletrico.html" class="btn btn-eletrico btn-acessar"> 
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>  
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-eletrico">
         Mostrar mais
       </button>
-      
       <div class="collapse" id="descricao-eletrico">
-        <p class="mensagem">Os pokémons Elétricos acumulam energia e liberam choques poderosos para paralisar seus adversários.</p>
+        <p class="mensagem">Pokémons Elétrico liberam choques poderosos, paralisando adversários com rajadas de energia.</p>
+      </div>
+    </div>
+
+    <div class="categoria inseto">
+      <i class="fas fa-bug icone"></i>
+      <h3>Inseto</h3>
+      <a href="tipoinseto.html" class="btn btn-inseto btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-inseto">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-inseto">
+        <p class="mensagem">Pokémons Inseto são rápidos e utilizam ferrões, teias e mandíbulas afiadas para atacar.</p>
+      </div>
+    </div>
+
+    <div class="categoria venenoso">
+      <i class="fas fa-skull-crossbones icone"></i>
+      <h3>Venenoso</h3>
+      <a href="tipoveneno.html" class="btn btn-venenoso btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-venenoso">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-venenoso">
+        <p class="mensagem">Pokémons Venenoso liberam toxinas e venenos, envenenando adversários para reduzir suas habilidades.</p>
+      </div>
+    </div>
+
+    <!-- Categoria Terrestre -->
+    <div class="categoria terrestre">
+      <i class="fas fa-mountain icone"></i>
+      <h3>Terrestre</h3>
+      <a href="tipoterrestre.html" class="btn btn-terrestre btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-terrestre">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-terrestre">
+        <p class="mensagem">Pokémons Terrestre usam ataques de terra e areia, dominando cavernas e desertos.</p>
+      </div>
+    </div>
+
+    <div class="categoria fada">
+      <i class="fas fa-star icone"></i>
+      <h3>Fada</h3>
+      <a href="tipofada.html" class="btn btn-fada btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-fada">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-fada">
+        <p class="mensagem">Pokémons Fada utilizam magia e charme, com poderes místicos para proteger aliados e confundir inimigos.</p>
+      </div>
+    </div>
+
+    <div class="categoria lutador">
+      <i class="fas fa-hand-rock icone"></i>
+      <h3>Lutador</h3>
+      <a href="tipolutador.html" class="btn btn-lutador btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-lutador">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-lutador">
+        <p class="mensagem">Pokémons Lutador são especialistas em combate corpo a corpo, com socos e chutes devastadores.</p>
+      </div>
+    </div>
+
+    <div class="categoria psiquico">
+      <i class="fas fa-eye icone"></i>
+      <h3>Psíquico</h3>
+      <a href="tipopsiquico.html" class="btn btn-psiquico btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-psiquico">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-psiquico">
+        <p class="mensagem">Pokémons Psíquico manipulam mentes rivais com telecinese, telepatia e previsões do futuro.</p>
+      </div>
+    </div>
+
+    <!-- Categoria Pedra -->
+    <div class="categoria pedra">
+      <i class="fas fa-gem icone"></i>
+      <h3>Pedra</h3>
+      <a href="tipopedra.html" class="btn btn-pedra btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-pedra">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-pedra">
+        <p class="mensagem">Pokémons Pedra possuem defesas de rocha e podem lançar detritos e pedras afiados para atacar.</p>
+      </div>
+    </div>
+
+    <div class="categoria fantasma">
+      <i class="fas fa-ghost icone"></i>
+      <h3>Fantasma</h3>
+      <a href="tipofantasma.html" class="btn btn-fantasma btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-fantasma">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-fantasma">
+        <p class="mensagem">Pokémons Fantasma aparecem e desaparecem, usando ataques intangíveis e ilusões para amedrontar.</p>
+      </div>
+    </div>
+
+    <div class="categoria gelo">
+      <i class="fas fa-snowflake icone"></i>
+      <h3>Gelo</h3>
+      <a href="tipogelo.html" class="btn btn-gelo btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-gelo">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-gelo">
+        <p class="mensagem">Pokémons Gelo controlam o frio, congelando terrenos e adversários com tempestades geladas.</p>
+      </div>
+    </div>
+
+    <div class="categoria dragao">
+      <i class="fas fa-dragon icone"></i>
+      <h3>Dragão</h3>
+      <a href="tipodragao.html" class="btn btn-dragao btn-acessar"> 
+          Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-dragao">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-dragao">
+        <p class="mensagem">Pokémons Dragão são imponentes e poderosos, dominando o ar com rajadas dracônicas.</p>
+      </div>
+    </div>
+
+    <!-- Link para form.html -->
+    <div class="categoria form-link">
+      <i class="fas fa-pencil-alt icone"></i>
+      <h3>Formulário</h3>
+      <a href="form.html" class="btn btn-info btn-acessar">
+        Acesse <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-form">
+        Mostrar mais
+      </button>
+      <div class="collapse" id="descricao-form">
+        <p class="mensagem">Clique em "Acesse" para adicionar um novo Pokémon à Pokédex através do formulário.</p>
       </div>
     </div>
 
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <div class="frase">
     <p class="frase-pergunta">Você conhece todos os 151 pokémons da primeira geração?</p>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-5">
+  <footer>
     <p>© 2025 Projeto Pokémon | Desenvolvido por Giovana e Isabela</p>
-</footer>
+  </footer>
 
 </body>
 </html>

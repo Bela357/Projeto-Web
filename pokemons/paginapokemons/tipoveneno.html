@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,52 +10,56 @@
 
   <style>
     body {
-        background-color: #e0f7fa;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/venenoso/background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('../imgpokemon/venenoso/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .pokedex-card {
-        background: rgba(44, 0, 70, 0.85);
-        color: #E0B3FF; 
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(44, 0, 70, 0.85);
+      color: #E0B3FF;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
+
     .pokedex-header {
-        background-color: #9B30FF;
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #9B30FF;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
+
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
+
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
+
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
 
     .btn-voltar {
-        background-color: #6A0DAD;
-        color: white;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #6A0DAD;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #5900b3; 
-        color: white;
+      background-color: #5900b3;
+      color: white;
     }
 
     footer {
@@ -66,282 +71,279 @@
     }
   </style>
 </head>
+
 <body>
-<div class="container py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-4">
     <div class="row g-4">
-        <div class="col-12 text-start">
-            <a href="../../index.html" class="btn btn-voltar">
-                ⬅ Voltar
-            </a>
-        </div>
+      <div class="col-12 text-start">
+        <a href="../../index.html" class="btn btn-voltar">
+          ⬅ Voltar
+        </a>
+      </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Ekans</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/ekans.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="ekans">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Arbok</p>
-          <p><strong>Número na Pokedex:</strong> 023</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Ekans</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/ekans.png" class="pokemon-img mx-auto d-block" alt="ekans">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Arbok</p>
+            <p><strong>Número na Pokedex:</strong> 023</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Arbok</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/arbok.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="arbok">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Ekans</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 024</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Arbok</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/arbok.png" class="pokemon-img mx-auto d-block" alt="arbok">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Ekans</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 024</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidoran ♀</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/Nidoran♀.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="nidoran ♀">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Nidorina</p>
-          <p><strong>Número na Pokedex:</strong> 029</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidoran ♀</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/Nidoran♀.png" class="pokemon-img mx-auto d-block" alt="nidoran ♀">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Nidorina</p>
+            <p><strong>Número na Pokedex:</strong> 029</p>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidorina</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/nidorina.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="nidorina">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Nidoran ♀</p>
-          <p><strong>Evolução:</strong> Nidoqueen</p>
-          <p><strong>Número na Pokedex:</strong> 030</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidorina</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/nidorina.png" class="pokemon-img mx-auto d-block" alt="nidorina">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Nidoran ♀</p>
+            <p><strong>Evolução:</strong> Nidoqueen</p>
+            <p><strong>Número na Pokedex:</strong> 030</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidoqueen</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/nidoqueen.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="nidoqueen">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> Terrestre</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Nidorina</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 031</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidoqueen</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/nidoqueen.png" class="pokemon-img mx-auto d-block" alt="nidoqueen">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> Terrestre</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Nidorina</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 031</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidoran ♂</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/Nidoran♂.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Nidoran♂">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Nidorino</p>
-          <p><strong>Número na Pokedex:</strong> 032</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidoran ♂</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/Nidoran♂.png" class="pokemon-img mx-auto d-block" alt="Nidoran♂">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Nidorino</p>
+            <p><strong>Número na Pokedex:</strong> 032</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidorino</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/nidorino.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="nidorino">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Nidoran ♂</p>
-          <p><strong>Evolução:</strong> Nidoking</p>
-          <p><strong>Número na Pokedex:</strong> 033</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidorino</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/nidorino.png" class="pokemon-img mx-auto d-block" alt="nidorino">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Nidoran ♂</p>
+            <p><strong>Evolução:</strong> Nidoking</p>
+            <p><strong>Número na Pokedex:</strong> 033</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Nidoking</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/nidoking.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="nidoking">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> Terrestre</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Nidorino</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 034</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Nidoking</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/nidoking.png" class="pokemon-img mx-auto d-block" alt="nidoking">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> Terrestre</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Nidorino</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 034</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Zubat</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/zubat.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="zubat">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Golbat</p>
-          <p><strong>Número na Pokedex:</strong> 041</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Zubat</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/zubat.png" class="pokemon-img mx-auto d-block" alt="zubat">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Golbat</p>
+            <p><strong>Número na Pokedex:</strong> 041</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Golbat</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/golbat.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="golbat">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Zubat</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 042</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Golbat</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/golbat.png" class="pokemon-img mx-auto d-block" alt="golbat">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Zubat</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 042</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Grimer</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/grimer.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="grimer">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Muk</p>
-          <p><strong>Número na Pokedex:</strong> 088</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Grimer</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/grimer.png" class="pokemon-img mx-auto d-block" alt="grimer">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Muk</p>
+            <p><strong>Número na Pokedex:</strong> 088</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Muk</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/muk.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="muk">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Grimer</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 089</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Muk</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/muk.png" class="pokemon-img mx-auto d-block" alt="muk">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Grimer</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 089</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Koffing</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/koffing.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="koffing">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Weezing</p>
-          <p><strong>Número na Pokedex:</strong> 109</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Koffing</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/koffing.png" class="pokemon-img mx-auto d-block" alt="koffing">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Weezing</p>
+            <p><strong>Número na Pokedex:</strong> 109</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Weezing</h5>
-        </div>
-        <img src="../imgpokemon/venenoso/weezing.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="weezing">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Venenoso</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Koffing</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 110</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Weezing</h5>
+          </div>
+          <img src="../imgpokemon/venenoso/weezing.png" class="pokemon-img mx-auto d-block" alt="weezing">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Venenoso</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Koffing</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 110</p>
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
-</div>    
+  </div>
 </body>

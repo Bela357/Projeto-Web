@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,130 +10,153 @@
 
   <style>
     body {
-        background-color: #e0f7fa;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/dragao/background.avif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('../imgpokemon/dragao/background.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .pokedex-card {
-        background: rgba(246, 237, 113, 0.85);
-        color: #5D3A6A;
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(246, 237, 113, 0.85);
+      color: #5D3A6A;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
+
     .pokedex-header {
-        background-color: #eed754	;
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #eed754;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
+
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
+
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
+
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
 
     .btn-voltar {
-        background-color:  #eed754;
-        color: white;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #eed754;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #e5c617; 
-        color: white;
+      background-color: #e5c617;
+      color: white;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color:#FFC1CC;
-      color:#FDFEFF;
+      background-color: #FFC1CC;
+      color: #FDFEFF;
       margin-top: 40px;
     }
   </style>
 </head>
-<body>
-<div class="container py-4">
-    <div class="row g-4">
-        <div class="col-12 text-start">
-            <a href="../../index.html" class="btn btn-voltar">
-                ⬅ Voltar
-            </a>
-        </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-12 text-start">
+        <a href="../../index.html" class="btn btn-voltar">
+          ⬅ Voltar
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="pokedex-card">
-            <div class="pokedex-header">
-            <h5>Dratini	</h5>
-            </div>
-            <img src="../imgpokemon/dragao/dratini.png" 
-                class="pokemon-img mx-auto d-block" 
-                alt="Dratini">
-            <div class="pokedex-body text-center">
+          <div class="pokedex-header">
+            <h5>Dratini </h5>
+          </div>
+          <img src="../imgpokemon/dragao/dratini.png" class="pokemon-img mx-auto d-block" alt="Dratini">
+          <div class="pokedex-body text-center">
             <p><strong>Tipo 1:</strong> Dragão</p>
             <p><strong>Tipo 2:</strong> ——</p>
             <p><strong>Fase:</strong> 1</p>
             <p><strong>Fase anterior:</strong> ——</p>
             <p><strong>Evolução:</strong> Dragonair</p>
             <p><strong>Número na Pokedex:</strong> 147</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Dragonair</h5>
-        </div>
-        <img src="../imgpokemon/dragao/Dragonair.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Dragonair">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Gelo</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 1</p> 
-          <p><strong>Fase anterior:</strong> —— </p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 148</p>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Dragonite</h5>
-        </div>
-        <img src="../imgpokemon/dragao/Dragonite.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Dragonite">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Gelo</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 1</p> 
-          <p><strong>Fase anterior:</strong> —— </p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 149</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Dragonair</h5>
+          </div>
+          <img src="../imgpokemon/dragao/Dragonair.png" class="pokemon-img mx-auto d-block" alt="Dragonair">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Gelo</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> —— </p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 148</p>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Dragonite</h5>
+          </div>
+          <img src="../imgpokemon/dragao/Dragonite.png" class="pokemon-img mx-auto d-block" alt="Dragonite">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Gelo</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> —— </p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 149</p>
+          </div>
+        </div>
+      </div>
 
     </div>
-</div>
+  </div>
 
 </body>

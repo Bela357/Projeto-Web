@@ -1,233 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tipo Terrestre</title>
-  <link rel="icon" href="../imgpokemon/terrestre/icon.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipo Terrestre</title>
+    <link rel="icon" href="../imgpokemon/terrestre/icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    body {
-        background-color: #FFFDE7;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/terrestre/background.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    <style>
+        body {
+            background-color: #FFFDE7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('../imgpokemon/terrestre/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-    .pokedex-card {
-        background: rgba(176, 138, 95, 0.85); 
-        color: #ffffff; 
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        .pokedex-card {
+            background: rgba(176, 138, 95, 0.85);
+            color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .pokedex-header {
-        background-color: #b1703e; 
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
+        .pokedex-header {
+            background-color: #b1703e;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
 
-    .pokedex-body {
-        padding: 15px;
-    }
+        .pokedex-body {
+            padding: 15px;
+        }
 
-    .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
-    }
+        .pokemon-img {
+            width: 120px;
+            margin-top: 10px;
+        }
 
-    .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    }
+        .pokedex-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
 
-    .btn-voltar {
-        background-color: #b1703e; 
-        color: #212121;
-        border: none;
-        transition: background-color 0.3s ease;
-    }
+        .btn-voltar {
+            background-color: #b1703e;
+            color: #212121;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
 
-    .btn-voltar:hover {
-        background-color: #ba8343;
-        color: #212121;
-    }
+        .btn-voltar:hover {
+            background-color: #ba8343;
+            color: #212121;
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #ffda76;
-      color: #424242;
-      margin-top: 40px;
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffda76;
+            color: #424242;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                Pokédex 1ª Geração
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container py-4">
         <div class="row g-4">
             <div class="col-12 text-start">
-              <a href="../../index.html" class="btn btn-voltar">
-                  ⬅ Voltar
-              </a>
+                <a href="../../index.html" class="btn btn-voltar">
+                    ⬅ Voltar
+                </a>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Sandshrew</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Sandshrew</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Sandshrew.png" class="pokemon-img mx-auto d-block"
+                        alt="Sandshrew">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 1</p>
+                        <p><strong>Fase anterior:</strong> ——</p>
+                        <p><strong>Evolução:</strong> Sandslash</p>
+                        <p><strong>Número na Pokedex:</strong> 027</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Sandshrew.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Sandshrew">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 1</p>
-                    <p><strong>Fase anterior:</strong> ——</p>
-                    <p><strong>Evolução:</strong> Sandslash</p>
-                    <p><strong>Número na Pokedex:</strong> 027</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Sandslash</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Sandslash</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Sandslash.png" class="pokemon-img mx-auto d-block"
+                        alt="Sandslash">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 2</p>
+                        <p><strong>Fase anterior:</strong> Sandshrew</p>
+                        <p><strong>Evolução:</strong> ——</p>
+                        <p><strong>Número na Pokedex:</strong> 028</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Sandslash.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Sandslash">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 2</p>
-                    <p><strong>Fase anterior:</strong> Sandshrew</p>
-                    <p><strong>Evolução:</strong> ——</p>
-                    <p><strong>Número na Pokedex:</strong> 028</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Diglett</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Diglett</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Diglett.png" class="pokemon-img mx-auto d-block" alt="Diglett">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 1</p>
+                        <p><strong>Fase anterior:</strong> ——</p>
+                        <p><strong>Evolução:</strong> Dugtrio</p>
+                        <p><strong>Número na Pokedex:</strong> 050</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Diglett.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Diglett">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 1</p>
-                    <p><strong>Fase anterior:</strong> ——</p>
-                    <p><strong>Evolução:</strong> Dugtrio</p>
-                    <p><strong>Número na Pokedex:</strong> 050</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Dugtrio</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Dugtrio</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Dugtrio.png" class="pokemon-img mx-auto d-block" alt="Dugtrio">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 2</p>
+                        <p><strong>Fase anterior:</strong> Diglett</p>
+                        <p><strong>Evolução:</strong> ——</p>
+                        <p><strong>Número na Pokedex:</strong> 051</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Dugtrio.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Dugtrio">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 2</p>
-                    <p><strong>Fase anterior:</strong> Diglett</p>
-                    <p><strong>Evolução:</strong> ——</p>
-                    <p><strong>Número na Pokedex:</strong> 051</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Cubone</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Cubone</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Cubone.png" class="pokemon-img mx-auto d-block" alt="Cubone">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 1</p>
+                        <p><strong>Fase anterior:</strong> ——</p>
+                        <p><strong>Evolução:</strong> Marowak</p>
+                        <p><strong>Número na Pokedex:</strong> 104</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Cubone.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Cubone">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 1</p>
-                    <p><strong>Fase anterior:</strong> ——</p>
-                    <p><strong>Evolução:</strong> Marowak</p>
-                    <p><strong>Número na Pokedex:</strong> 104</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Marowak</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Marowak</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Marowak.png" class="pokemon-img mx-auto d-block" alt="Marowak">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> ——</p>
+                        <p><strong>Fase:</strong> 2</p>
+                        <p><strong>Fase anterior:</strong> Cubone</p>
+                        <p><strong>Evolução:</strong> ——</p>
+                        <p><strong>Número na Pokedex:</strong> 105</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Marowak.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Marowak">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> ——</p>
-                    <p><strong>Fase:</strong> 2</p>
-                    <p><strong>Fase anterior:</strong> Cubone</p>
-                    <p><strong>Evolução:</strong> ——</p>
-                    <p><strong>Número na Pokedex:</strong> 105</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Rhyhorn</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Rhyhorn</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Rhyhorn.png" class="pokemon-img mx-auto d-block" alt="Rhyhorn">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> Pedra</p>
+                        <p><strong>Fase:</strong> 1</p>
+                        <p><strong>Fase anterior:</strong> ——</p>
+                        <p><strong>Evolução:</strong> Rhydon</p>
+                        <p><strong>Número na Pokedex:</strong> 111</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Rhyhorn.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Rhyhorn">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> Pedra</p>
-                    <p><strong>Fase:</strong> 1</p>
-                    <p><strong>Fase anterior:</strong> ——</p>
-                    <p><strong>Evolução:</strong> Rhydon</p>
-                    <p><strong>Número na Pokedex:</strong> 111</p>
-                </div>
-            </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="pokedex-card">
-                <div class="pokedex-header">
-                <h5>Rhydon</h5>
+                <div class="pokedex-card">
+                    <div class="pokedex-header">
+                        <h5>Rhydon</h5>
+                    </div>
+                    <img src="../imgpokemon/terrestre/Rhydon.png" class="pokemon-img mx-auto d-block" alt="Rhydon">
+                    <div class="pokedex-body text-center">
+                        <p><strong>Tipo 1:</strong> Terrestre</p>
+                        <p><strong>Tipo 2:</strong> Pedra</p>
+                        <p><strong>Fase:</strong> 2</p>
+                        <p><strong>Fase anterior:</strong> Rhyhorn</p>
+                        <p><strong>Evolução:</strong> ——</p>
+                        <p><strong>Número na Pokedex:</strong> 112</p>
+                    </div>
                 </div>
-                <img src="../imgpokemon/terrestre/Rhydon.png" 
-                    class="pokemon-img mx-auto d-block" 
-                    alt="Rhydon">
-                <div class="pokedex-body text-center">
-                    <p><strong>Tipo 1:</strong> Terrestre</p>
-                    <p><strong>Tipo 2:</strong> Pedra</p>
-                    <p><strong>Fase:</strong> 2</p>
-                    <p><strong>Fase anterior:</strong> Rhyhorn</p>
-                    <p><strong>Evolução:</strong> ——</p>
-                    <p><strong>Número na Pokedex:</strong> 112</p>
-                </div>
-            </div>
             </div>
         </div>
     </div>

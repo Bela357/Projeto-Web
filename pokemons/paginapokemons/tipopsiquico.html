@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipo Psíquico</title>
-    <link rel="icon" href="../imgpokemon/psiquico/icon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body{
-          background-image: url('../imgpokemon/psiquico/background.jpeg');
-          background-size: cover;
-          background-color: #e0f7fa;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      .pokedex-card {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipo Psíquico</title>
+  <link rel="icon" href="../imgpokemon/psiquico/icon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../imgpokemon/psiquico/background.jpeg');
+      background-size: cover;
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pokedex-card {
       background: rgba(174, 104, 200, 0.85);
       color: white;
       border-radius: 20px;
@@ -22,36 +24,41 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
+
     .pokedex-header {
-        background-color: #9224aa;
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #9224aa;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
+
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
+
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
+
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
 
     .btn-voltar {
-        background-color: #9224aa;
-        color: white;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #9224aa;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #a55ab5;
-        color: white;
+      background-color: #a55ab5;
+      color: white;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -59,168 +66,177 @@
       color: white;
       margin-top: 40px;
     }
-    </style>
+  </style>
 </head>
+
 <body>
-    <div class="container py-4">
-        <div class="row g-4">
-            <div class="col-12 text-start">
-            <a href="../../index.html" class="btn btn-voltar">
-                ⬅ Voltar
-            </a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Abra</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/abra.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="abra">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Kadabra</p>
-          <p><strong>Número na Pokedex:</strong> 063</p>
-        </div>
-      </div>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Kadabra</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/kadabra.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="kadabra">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Abra</p>
-          <p><strong>Evolução:</strong> Alakazam</p>
-          <p><strong>Número na Pokedex:</strong> 064</p>
-        </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-12 text-start">
+        <a href="../../index.html" class="btn btn-voltar">
+          ⬅ Voltar
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Abra</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/abra.png" class="pokemon-img mx-auto d-block" alt="abra">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Kadabra</p>
+            <p><strong>Número na Pokedex:</strong> 063</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Alakazam</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/alakazam.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="alakazam">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Kadabra</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 065</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Kadabra</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/kadabra.png" class="pokemon-img mx-auto d-block" alt="kadabra">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Abra</p>
+            <p><strong>Evolução:</strong> Alakazam</p>
+            <p><strong>Número na Pokedex:</strong> 064</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Drowzee</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/drowzee.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="drowzee">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Hypno</p>
-          <p><strong>Número na Pokedex:</strong> 096</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Alakazam</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/alakazam.png" class="pokemon-img mx-auto d-block" alt="alakazam">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Kadabra</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 065</p>
+          </div>
         </div>
       </div>
-    </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Hypno</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/hypno.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="hypno">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Drowzee</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 097</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Drowzee</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/drowzee.png" class="pokemon-img mx-auto d-block" alt="drowzee">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Hypno</p>
+            <p><strong>Número na Pokedex:</strong> 096</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Mr.Mime</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/mrmime.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="mr.mime">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 122</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Hypno</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/hypno.png" class="pokemon-img mx-auto d-block" alt="hypno">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Drowzee</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 097</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Mewtwo</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/mewtwo.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="mewtwo">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 150</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Mr.Mime</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/mrmime.png" class="pokemon-img mx-auto d-block" alt="mr.mime">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 122</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Mew</h5>
-        </div>
-        <img src="../imgpokemon/psiquico/mew.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="mew">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Psíquico</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 151</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Mewtwo</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/mewtwo.png" class="pokemon-img mx-auto d-block" alt="mewtwo">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 150</p>
+          </div>
         </div>
       </div>
-    </div>
-    
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Mew</h5>
+          </div>
+          <img src="../imgpokemon/psiquico/mew.png" class="pokemon-img mx-auto d-block" alt="mew">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Psíquico</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 151</p>
+          </div>
         </div>
+      </div>
+
     </div>
+  </div>
 </body>

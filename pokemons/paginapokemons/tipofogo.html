@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,55 +10,56 @@
 
   <style>
     body {
-        background-color: #FFFDE7;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/fogo/background.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      background-color: #FFFDE7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('../imgpokemon/fogo/background.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 56px;
     }
 
     .pokedex-card {
-        background: rgba(255, 146, 21, 0.85); 
-        color: #ffffff; 
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(255, 146, 21, 0.85);
+      color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .pokedex-header {
-        background-color: #e26200; 
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #e26200;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
 
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
 
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
 
     .btn-voltar {
-        background-color: #ff8800; 
-        color: #212121;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #ff8800;
+      color: #212121;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #e26200;
-        color: #212121;
+      background-color: #e26200;
+      color: #212121;
     }
 
     footer {
@@ -69,244 +71,240 @@
     }
   </style>
 </head>
-<body >
-    <div class="container py-4">
-        <div class="row g-4">
-            <div class="col-12 text-start">
-            <a href="../../index.html" class="btn btn-voltar">
-                ⬅ Voltar
-            </a>
-            </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Charmander</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Charmander.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Charmander">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Charmeleon</p>
-          <p><strong>Número na Pokedex:</strong> 004</p>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <div class="container py-4">
+    <div class="row g-4">
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Charmeleon</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Charmeleon.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Charmeleon">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Charmander</p>
-          <p><strong>Evolução:</strong> Charizard</p>
-          <p><strong>Número na Pokedex:</strong> 005</p>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Charmander</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Charmander.png" class="pokemon-img mx-auto d-block" alt="Charmander">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Charmeleon</p>
+            <p><strong>Número na Pokedex:</strong> 004</p>
+          </div>
         </div>
       </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Charmeleon</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Charmeleon.png" class="pokemon-img mx-auto d-block" alt="Charmeleon">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Charmander</p>
+            <p><strong>Evolução:</strong> Charizard</p>
+            <p><strong>Número na Pokedex:</strong> 005</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Charizard</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Charizard.png" class="pokemon-img mx-auto d-block" alt="Charizard">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Charmeleon</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 006</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Vulpix</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Vulpix.png" class="pokemon-img mx-auto d-block" alt="Vulpix">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Ninetales</p>
+            <p><strong>Número na Pokedex:</strong> 037</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Ninetales</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Ninetales.png" class="pokemon-img mx-auto d-block" alt="Ninetales">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Vulpix</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 038</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Growlithe</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Growlithe.png" class="pokemon-img mx-auto d-block" alt="Growlithe">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Arcanine</p>
+            <p><strong>Número na Pokedex:</strong> 058</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Arcanine</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Arcanine.png" class="pokemon-img mx-auto d-block" alt="Arcanine">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Growlithe</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 059</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Ponyta</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Ponyta.png" class="pokemon-img mx-auto d-block" alt="Ponyta">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Rapidash</p>
+            <p><strong>Número na Pokedex:</strong> 077</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Rapidash</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Rapidash.png" class="pokemon-img mx-auto d-block" alt="Rapidash">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Ponyta</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 078</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Magmar</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Magmar.png" class="pokemon-img mx-auto d-block" alt="Magmar">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 126</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Flareon</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Flareon.png" class="pokemon-img mx-auto d-block" alt="Flareon">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 136</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Moltres</h5>
+          </div>
+          <img src="../imgpokemon/fogo/Moltres.png" class="pokemon-img mx-auto d-block" alt="Moltres">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Fogo</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 146</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Charizard</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Charizard.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Charizard">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Charmeleon</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 006</p>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Vulpix</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Vulpix.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Vulpix">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Ninetales</p>
-          <p><strong>Número na Pokedex:</strong> 037</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Ninetales</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Ninetales.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Ninetales">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Vulpix</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 038</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Growlithe</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Growlithe.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Growlithe">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Arcanine</p>
-          <p><strong>Número na Pokedex:</strong> 058</p>
-        </div>
-      </div>
-    </div>  
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Arcanine</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Arcanine.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Arcanine">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Growlithe</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 059</p>
-        </div>
-      </div>
-    </div> 
-    
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Ponyta</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Ponyta.png"
-             class="pokemon-img mx-auto d-block" 
-             alt="Ponyta">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Rapidash</p>
-          <p><strong>Número na Pokedex:</strong> 077</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Rapidash</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Rapidash.png"
-             class="pokemon-img mx-auto d-block" 
-             alt="Rapidash">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Ponyta</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 078</p>
-        </div>
-      </div>
-    </div> 
-
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Magmar</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Magmar.png"
-             class="pokemon-img mx-auto d-block" 
-             alt="Magmar">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 126</p>
-        </div>
-      </div>
-    </div> 
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Flareon</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Flareon.png"
-             class="pokemon-img mx-auto d-block" 
-             alt="Flareon">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 136</p>
-        </div>
-      </div>
-    </div> 
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Moltres</h5>
-        </div>
-        <img src="../imgpokemon/fogo/Moltres.png"
-             class="pokemon-img mx-auto d-block" 
-             alt="Moltres">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Fogo</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 146</p>
-        </div>
-      </div>
-    </div> 
-
-        </div>
-    </div>
+  </div>
 </body>

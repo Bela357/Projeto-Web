@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,52 +10,57 @@
 
   <style>
     body {
-        background-color: #e0f7fa;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/agua/background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('../imgpokemon/agua/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 56px;
     }
 
     .pokedex-card {
-        background: rgba(2, 136, 209, 0.85);
-        color: white;
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(2, 136, 209, 0.85);
+      color: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
+
     .pokedex-header {
-        background-color: #01579b;
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #01579b;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
+
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
+
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
+
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
-   
+
     .btn-voltar {
-        background-color: #0288d1;
-        color: white;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #01579b; 
-        color: white;
+      background-color: #01579b;
+      color: white;
     }
 
     footer {
@@ -66,560 +72,525 @@
     }
   </style>
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<div class="container py-4">
-  <div class="row g-4">
-    <div class="col-12 text-start">
-        <a href="../../index.html" class="btn btn-voltar">
-            ⬅ Voltar
-        </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Squirtle</h5>
-        </div>
-        <img src="../imgpokemon/agua/squirtle.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Squirtle">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Wartortle</p>
-          <p><strong>Número na Pokedex:</strong> 007</p>
-        </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Wartortle</h5>
-        </div>
-        <img src="../imgpokemon/agua/wartortle.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Wartortle">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Squirtle</p>
-          <p><strong>Evolução:</strong> Blastoise</p>
-          <p><strong>Número na Pokedex:</strong> 008</p>
-        </div>
-      </div>
-    </div>
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-12 text-start">
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Blastoise</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Squirtle</h5>
+            </div>
+            <img src="../imgpokemon/agua/squirtle.png" class="pokemon-img mx-auto d-block" alt="Squirtle">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Wartortle</p>
+              <p><strong>Número na Pokedex:</strong> 007</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/blastoise.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Wartortle</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 009</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Psyduck</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Wartortle</h5>
+            </div>
+            <img src="../imgpokemon/agua/wartortle.png" class="pokemon-img mx-auto d-block" alt="Wartortle">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Squirtle</p>
+              <p><strong>Evolução:</strong> Blastoise</p>
+              <p><strong>Número na Pokedex:</strong> 008</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/psyduck.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="psyduck">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Golduck</p>
-          <p><strong>Número na Pokedex:</strong> 054</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Golduck</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Blastoise</h5>
+            </div>
+            <img src="../imgpokemon/agua/blastoise.png" class="pokemon-img mx-auto d-block" alt="">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 3</p>
+              <p><strong>Fase anterior:</strong> Wartortle</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 009</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/golduck.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="golduck">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Psyduck</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 055</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Poliwag</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Psyduck</h5>
+            </div>
+            <img src="../imgpokemon/agua/psyduck.png" class="pokemon-img mx-auto d-block" alt="psyduck">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Golduck</p>
+              <p><strong>Número na Pokedex:</strong> 054</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/poliwag.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="poliwag">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Poliwhirl</p>
-          <p><strong>Número na Pokedex:</strong> 060</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Poliwhirl</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Golduck</h5>
+            </div>
+            <img src="../imgpokemon/agua/golduck.png" class="pokemon-img mx-auto d-block" alt="golduck">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Psyduck</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 055</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/poliwhirl.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Poliwhirl">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Poliwag</p>
-          <p><strong>Evolução:</strong> Poliwrath</p>
-          <p><strong>Número na Pokedex:</strong> 061</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Poliwrath</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Poliwag</h5>
+            </div>
+            <img src="../imgpokemon/agua/poliwag.png" class="pokemon-img mx-auto d-block" alt="poliwag">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Poliwhirl</p>
+              <p><strong>Número na Pokedex:</strong> 060</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/poliwrath.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Poliwrath">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Lutador</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Poliwhirl</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 062</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Tentacool</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Poliwhirl</h5>
+            </div>
+            <img src="../imgpokemon/agua/poliwhirl.png" class="pokemon-img mx-auto d-block" alt="Poliwhirl">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Poliwag</p>
+              <p><strong>Evolução:</strong> Poliwrath</p>
+              <p><strong>Número na Pokedex:</strong> 061</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/tentacool.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Tentacool">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Tentacruel</p>
-          <p><strong>Número na Pokedex:</strong> 072</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Tentacruel</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Poliwrath</h5>
+            </div>
+            <img src="../imgpokemon/agua/poliwrath.png" class="pokemon-img mx-auto d-block" alt="Poliwrath">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Lutador</p>
+              <p><strong>Fase:</strong> 3</p>
+              <p><strong>Fase anterior:</strong> Poliwhirl</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 062</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/tentacruel.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="tentacruel">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Tentacool</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 073</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Slowpoke</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Tentacool</h5>
+            </div>
+            <img src="../imgpokemon/agua/tentacool.png" class="pokemon-img mx-auto d-block" alt="Tentacool">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Venenoso</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Tentacruel</p>
+              <p><strong>Número na Pokedex:</strong> 072</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/slowpoke.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="slowpoke">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Psíquico</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Slowbro</p>
-          <p><strong>Número na Pokedex:</strong> 079</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Slowbro</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Tentacruel</h5>
+            </div>
+            <img src="../imgpokemon/agua/tentacruel.png" class="pokemon-img mx-auto d-block" alt="tentacruel">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Venenoso</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Tentacool</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 073</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/slowbro.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="slowbro">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Psíquico</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Slowpoke</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 080</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Seel</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Slowpoke</h5>
+            </div>
+            <img src="../imgpokemon/agua/slowpoke.png" class="pokemon-img mx-auto d-block" alt="slowpoke">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Psíquico</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Slowbro</p>
+              <p><strong>Número na Pokedex:</strong> 079</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/seel.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="seel">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Dewgong</p>
-          <p><strong>Número na Pokedex:</strong> 086</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Dewgong</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Slowbro</h5>
+            </div>
+            <img src="../imgpokemon/agua/slowbro.png" class="pokemon-img mx-auto d-block" alt="slowbro">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Psíquico</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Slowpoke</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 080</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/dewgong.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="dewgong">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Gelo</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Seel</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 087</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Shellder</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Seel</h5>
+            </div>
+            <img src="../imgpokemon/agua/seel.png" class="pokemon-img mx-auto d-block" alt="seel">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Dewgong</p>
+              <p><strong>Número na Pokedex:</strong> 086</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/shellder.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="shelder">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Cloyster</p>
-          <p><strong>Número na Pokedex:</strong> 090</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Cloyster</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Dewgong</h5>
+            </div>
+            <img src="../imgpokemon/agua/dewgong.png" class="pokemon-img mx-auto d-block" alt="dewgong">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Gelo</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Seel</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 087</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/cloyster.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="cloyster">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Gelo</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Shellder</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 091</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Krabby</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Shellder</h5>
+            </div>
+            <img src="../imgpokemon/agua/shellder.png" class="pokemon-img mx-auto d-block" alt="shelder">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Cloyster</p>
+              <p><strong>Número na Pokedex:</strong> 090</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/krabby.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Kingler</p>
-          <p><strong>Número na Pokedex:</strong> 098</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Kingler</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Cloyster</h5>
+            </div>
+            <img src="../imgpokemon/agua/cloyster.png" class="pokemon-img mx-auto d-block" alt="cloyster">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Gelo</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Shellder</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 091</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/kingler.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="kingler">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Krabby</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 099</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Horsea</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Krabby</h5>
+            </div>
+            <img src="../imgpokemon/agua/krabby.png" class="pokemon-img mx-auto d-block" alt="">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Kingler</p>
+              <p><strong>Número na Pokedex:</strong> 098</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/horsea.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="horsea">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Seadra</p>
-          <p><strong>Número na Pokedex:</strong> 116</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Seadra</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Kingler</h5>
+            </div>
+            <img src="../imgpokemon/agua/kingler.png" class="pokemon-img mx-auto d-block" alt="kingler">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Krabby</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 099</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/seadra.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="seadra">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Horsea</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 117</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Goldeen</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Horsea</h5>
+            </div>
+            <img src="../imgpokemon/agua/horsea.png" class="pokemon-img mx-auto d-block" alt="horsea">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Seadra</p>
+              <p><strong>Número na Pokedex:</strong> 116</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/goldeen.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="goldeen">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Seaking</p>
-          <p><strong>Número na Pokedex:</strong> 118</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Seaking</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Seadra</h5>
+            </div>
+            <img src="../imgpokemon/agua/seadra.png" class="pokemon-img mx-auto d-block" alt="seadra">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Horsea</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 117</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/seaking.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="seaking">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Goldeen</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 119</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Staryu</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Goldeen</h5>
+            </div>
+            <img src="../imgpokemon/agua/goldeen.png" class="pokemon-img mx-auto d-block" alt="goldeen">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Seaking</p>
+              <p><strong>Número na Pokedex:</strong> 118</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/staryu.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="staryu">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Starmie</p>
-          <p><strong>Número na Pokedex:</strong> 120</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Starmie</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Seaking</h5>
+            </div>
+            <img src="../imgpokemon/agua/seaking.png" class="pokemon-img mx-auto d-block" alt="seaking">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Goldeen</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 119</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/starmie.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="starmie">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Psíquico</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Staryu</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 121</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Magikarp</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Staryu</h5>
+            </div>
+            <img src="../imgpokemon/agua/staryu.png" class="pokemon-img mx-auto d-block" alt="staryu">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Starmie</p>
+              <p><strong>Número na Pokedex:</strong> 120</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/magikarp.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="magikarp">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Gyarados</p>
-          <p><strong>Número na Pokedex:</strong> 129</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Gyarados</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Starmie</h5>
+            </div>
+            <img src="../imgpokemon/agua/starmie.png" class="pokemon-img mx-auto d-block" alt="starmie">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Psíquico</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Staryu</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 121</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/Gyarados.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="gyarados">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Magikarp</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 130</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Lapras</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Magikarp</h5>
+            </div>
+            <img src="../imgpokemon/agua/magikarp.png" class="pokemon-img mx-auto d-block" alt="magikarp">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> Gyarados</p>
+              <p><strong>Número na Pokedex:</strong> 129</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/lapras.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="lapras">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> Gelo</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 131</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Vaporeon</h5>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Gyarados</h5>
+            </div>
+            <img src="../imgpokemon/agua/Gyarados.png" class="pokemon-img mx-auto d-block" alt="gyarados">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Voador</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Magikarp</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 130</p>
+            </div>
+          </div>
         </div>
-        <img src="../imgpokemon/agua/vaporeon.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="vaporeon">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Água</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Eevee</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 134</p>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Lapras</h5>
+            </div>
+            <img src="../imgpokemon/agua/lapras.png" class="pokemon-img mx-auto d-block" alt="lapras">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> Gelo</p>
+              <p><strong>Fase:</strong> 1</p>
+              <p><strong>Fase anterior:</strong> ——</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 131</p>
+            </div>
+          </div>
         </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="pokedex-card">
+            <div class="pokedex-header">
+              <h5>Vaporeon</h5>
+            </div>
+            <img src="../imgpokemon/agua/vaporeon.png" class="pokemon-img mx-auto d-block" alt="vaporeon">
+            <div class="pokedex-body text-center">
+              <p><strong>Tipo 1:</strong> Água</p>
+              <p><strong>Tipo 2:</strong> ——</p>
+              <p><strong>Fase:</strong> 2</p>
+              <p><strong>Fase anterior:</strong> Eevee</p>
+              <p><strong>Evolução:</strong> ——</p>
+              <p><strong>Número na Pokedex:</strong> 134</p>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
 
 
 
-  </div>
-</div>
 
 
-
-
-
-  <footer>
-    &copy; 2025 Pokédex - Projeto Bootstrap
-  </footer>
+    <footer>
+      &copy; 2025 Pokédex - Projeto Bootstrap
+    </footer>
 </body>
 
 </html>

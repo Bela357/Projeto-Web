@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,55 +10,55 @@
 
   <style>
     body {
-        background-color: #FFFDE7;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('../imgpokemon/inseto/background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      background-color: #FFFDE7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('../imgpokemon/inseto/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .pokedex-card {
-        background: rgba(34, 158, 47, 0.85); 
-        color: #ffffff; 
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(34, 158, 47, 0.85);
+      color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .pokedex-header {
-        background-color: #09861a; 
-        padding: 10px;
-        text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+      background-color: #09861a;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     .pokedex-body {
-        padding: 15px;
+      padding: 15px;
     }
 
     .pokemon-img {
-        width: 120px;
-        margin-top: 10px;
+      width: 120px;
+      margin-top: 10px;
     }
 
     .pokedex-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     }
 
     .btn-voltar {
-        background-color: #37a533; 
-        color: #212121;
-        border: none;
-        transition: background-color 0.3s ease;
+      background-color: #37a533;
+      color: #212121;
+      border: none;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voltar:hover {
-        background-color: #09861a;
-        color: #212121;
+      background-color: #09861a;
+      color: #212121;
     }
 
     footer {
@@ -69,223 +70,226 @@
     }
   </style>
 </head>
-<body >
-    <div class="container py-4">
-        <div class="row g-4">
-            <div class="col-12 text-start">
-            <a href="../../index.html" class="btn btn-voltar">
-                ⬅ Voltar
-            </a>
-            </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Caterpie</h5>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../form/imgforms/pokeball.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        Pokédex 1ª Geração
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../form/form.html">Cadastrar Pokémon</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-12 text-start">
+        <a href="../../index.html" class="btn btn-voltar">
+          ⬅ Voltar
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Caterpie</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Caterpie.png" class="pokemon-img mx-auto d-block" alt="Caterpie">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Metapod</p>
+            <p><strong>Número na Pokedex:</strong> 010</p>
+          </div>
         </div>
-        <img src="../imgpokemon/inseto/Caterpie.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Caterpie">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Metapod</p>
-          <p><strong>Número na Pokedex:</strong> 010</p>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Metapod</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Metapod.png" class="pokemon-img mx-auto d-block" alt="Metapod">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Caterpie</p>
+            <p><strong>Evolução:</strong> Butterfree</p>
+            <p><strong>Número na Pokedex:</strong> 011</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Butterfree</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Butterfree.png" class="pokemon-img mx-auto d-block" alt="Butterfree">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Voador</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Metapod</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 012</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Weedle</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Weedle.png" class="pokemon-img mx-auto d-block" alt="Weedle">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Venenoso</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Kakuna</p>
+            <p><strong>Número na Pokedex:</strong> 013</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Kakuna</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Kakuna.png" class="pokemon-img mx-auto d-block" alt="Kakuna">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Venenoso</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Weedle</p>
+            <p><strong>Evolução:</strong> Beedrill</p>
+            <p><strong>Número na Pokedex:</strong> 014</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Beedrill</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Beedrill.png" class="pokemon-img mx-auto d-block" alt="Beedrill">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Venenoso</p>
+            <p><strong>Fase:</strong> 3</p>
+            <p><strong>Fase anterior:</strong> Kakuna</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 015</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Paras</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Paras.png" class="pokemon-img mx-auto d-block" alt="Paras">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Planta</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Parasect</p>
+            <p><strong>Número na Pokedex:</strong> 046</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Parasect</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Parasect.png" class="pokemon-img mx-auto d-block" alt="Parasect">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Planta</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Paras</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 047</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Venonat</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Venonat.png" class="pokemon-img mx-auto d-block" alt="Venonat">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Venenoso</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> Venomoth</p>
+            <p><strong>Número na Pokedex:</strong> 048</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Venomoth</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Venomoth.png" class="pokemon-img mx-auto d-block" alt="Venomoth">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> Venenoso</p>
+            <p><strong>Fase:</strong> 2</p>
+            <p><strong>Fase anterior:</strong> Venonat</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 049</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="pokedex-card">
+          <div class="pokedex-header">
+            <h5>Pinsir</h5>
+          </div>
+          <img src="../imgpokemon/inseto/Pinsir.png" class="pokemon-img mx-auto d-block" alt="Pinsir">
+          <div class="pokedex-body text-center">
+            <p><strong>Tipo 1:</strong> Inseto</p>
+            <p><strong>Tipo 2:</strong> ——</p>
+            <p><strong>Fase:</strong> 1</p>
+            <p><strong>Fase anterior:</strong> ——</p>
+            <p><strong>Evolução:</strong> ——</p>
+            <p><strong>Número na Pokedex:</strong> 127</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Metapod</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Metapod.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Metapod">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Caterpie</p>
-          <p><strong>Evolução:</strong> Butterfree</p>
-          <p><strong>Número na Pokedex:</strong> 011</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Butterfree</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Butterfree.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Butterfree">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Voador</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Metapod</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 012</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Weedle</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Weedle.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Weedle">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Kakuna</p>
-          <p><strong>Número na Pokedex:</strong> 013</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Kakuna</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Kakuna.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Kakuna">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Weedle</p>
-          <p><strong>Evolução:</strong> Beedrill</p>
-          <p><strong>Número na Pokedex:</strong> 014</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Beedrill</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Beedrill.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Beedrill">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 3</p>
-          <p><strong>Fase anterior:</strong> Kakuna</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 015</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Paras</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Paras.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Paras">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Planta</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Parasect</p>
-          <p><strong>Número na Pokedex:</strong> 046</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Parasect</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Parasect.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Parasect">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Planta</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Paras</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 047</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Venonat</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Venonat.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Venonat">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> Venomoth</p>
-          <p><strong>Número na Pokedex:</strong> 048</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Venomoth</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Venomoth.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Venomoth">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> Venenoso</p>
-          <p><strong>Fase:</strong> 2</p>
-          <p><strong>Fase anterior:</strong> Venonat</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 049</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="pokedex-card">
-        <div class="pokedex-header">
-          <h5>Pinsir</h5>
-        </div>
-        <img src="../imgpokemon/inseto/Pinsir.png" 
-             class="pokemon-img mx-auto d-block" 
-             alt="Pinsir">
-        <div class="pokedex-body text-center">
-          <p><strong>Tipo 1:</strong> Inseto</p>
-          <p><strong>Tipo 2:</strong> ——</p>
-          <p><strong>Fase:</strong> 1</p>
-          <p><strong>Fase anterior:</strong> ——</p>
-          <p><strong>Evolução:</strong> ——</p>
-          <p><strong>Número na Pokedex:</strong> 127</p>
-        </div>
-      </div>
-    </div>
-        </div>
-    </div>
+  </div>
 </body>

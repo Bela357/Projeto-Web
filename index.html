@@ -22,8 +22,8 @@
 
     h1, h2 {
       text-align: center;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 24px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 40px;
       color: #FFD700;
       text-shadow: 3px 3px 0 #2a2a2a;
       margin-top: 20px;
@@ -80,16 +80,17 @@
       color: #333;
       font-family: 'Press Start 2P', cursive;
       font-size: 10px;
-      text-decoration: none;
+      text-decoration: none;  
     }
 
     .btn-link:hover {
       text-decoration: underline;
+      color: #333;
     }
 
     .mensagem {
       color: black;
-      font-family: 'Verdana', sans-serif;
+      font-family: 'VT323', monospace;
       font-size: 0.9rem;
     }
 
@@ -104,26 +105,21 @@
 
     /* CORES DOS CARDS DE CADA TIPO SE QUISER MUDAR */
 
-    .planta    { background: rgba(144, 238, 144, 0.85); border-color: green;  } 
-    .fogo      { background: rgba(255, 160, 122, 0.85); border-color: red;    } 
-    .agua      { background: rgba(173, 216, 230, 0.85); border-color: blue;   } 
-    .normal    { background: rgba(211, 211, 211, 0.85); border-color: gray;   } 
+    .planta    { background: rgba(144, 238, 144, 0.85); border-color: #008000;} 
+    .fogo      { background: rgba(247, 133, 88, 0.85); border-color: #ff8800;} 
+    .agua      { background: rgba(173, 216, 230, 0.85); border-color: #0000ff;} 
+    .normal    { background: rgba(211, 211, 211, 0.85); border-color: #808080;} 
     .eletrico  { background: rgba(255, 255, 102, 0.85); border-color: #FFD700;} 
-
-    .inseto    { background: rgba(189, 252, 201, 0.85); border-color: #A8B820;} 
-    .venenoso  { background: rgba(219, 112, 147, 0.85); border-color: #A040A0;} 
-    .terrestre { background: rgba(240, 230, 140, 0.85); border-color: #E0C068;} 
+    .inseto    { background: rgba(181, 244, 118, 0.85); border-color: #A8B820;} 
+    .venenoso  { background: rgba(190, 112, 219, 0.85); border-color: #4a0e56;} 
+    .terrestre { background: rgba(179, 146, 94, 0.85);  border-color: #af7a3a;} 
     .fada      { background: rgba(255, 182, 193, 0.85); border-color: #EE99AC;} 
-    .lutador   { background: rgba(250, 128, 114, 0.85); border-color: #C03028;} 
-    .psiquico  { background: rgba(255, 182, 255, 0.85); border-color: #F85888;} 
-    .pedra     { background: rgba(205, 133, 63, 0.85);  border-color: #B8A038;} 
-    .fantasma  { background: rgba(147, 112, 219, 0.85); border-color: #705898;} 
-    .gelo      { background: rgba(176, 224, 230, 0.85); border-color: #98D8D8;} 
-    .dragao    { background: rgba(176, 144, 255, 0.85); border-color: #7038F8;} 
-
-    /* COR DO FORMULARIO */
-    .form-link { background: rgba(144, 238, 250, 0.7); border-color: #00CED1; } 
-    .form-link .icone { color: #00CED1; }
+    .lutador   { background: rgba(250, 128, 114, 0.85); border-color: #912822;} 
+    .psiquico  { background: rgba(213, 81, 209, 0.85);  border-color: #9a0190;} 
+    .pedra     { background: rgba(179, 174, 122, 0.85); border-color: #89836d;} 
+    .fantasma  { background: rgba(119, 114, 214, 0.85); border-color: #402a96;} 
+    .gelo      { background: rgba(176, 224, 230, 0.85); border-color: #5da5a5;} 
+    .dragao    { background: rgba(255, 253, 144, 0.85); border-color: #eff838;} 
 
     /* CORES DOS BOTOES 'ACESSAR'*/
 
@@ -182,12 +178,12 @@
     }
 
     .btn-fantasma {
-      background-color: #705898;
+      background-color: #402a96;
       color: black;
       transition: background-color 0.3s ease;
     }
     .btn-fantasma:hover {
-      background-color: #8a70b3;
+      background-color: #392d6b;
       color: black;
     }
 
@@ -204,23 +200,23 @@
 
 
     .btn-venenoso {
-      background-color: #A040A0;
+      background-color: #5b1269;
       color: black;
       transition: background-color 0.3s ease;
     }
     .btn-venenoso:hover {
-      background-color: #bb5abb;
+      background-color: rgb(101, 17, 101);
       color: black;
     }
 
 
     .btn-terrestre {
-      background-color: #E0C068;
+      background-color: #af7a3a;
       color: black;
       transition: background-color 0.3s ease;
     }
     .btn-terrestre:hover {
-      background-color: #e8cf82;
+      background-color: #644e33;
       color: black;
     }
 
@@ -237,7 +233,7 @@
 
 
     .btn-lutador {
-      background-color: #C03028;
+      background-color: #912822;
       color: black;
       transition: background-color 0.3s ease;
     }
@@ -248,17 +244,18 @@
 
 
     .btn-psiquico {
-      background-color: #F85888;
+      background-color: #9a0190;
       color: black;
       transition: background-color 0.3s ease;
     }
     .btn-psiquico:hover {
-      background-color: #f97aa0;
+      background-color: #732e6f;
+      color: black;
     }
 
 
     .btn-pedra {
-      background-color: #B8A038;
+      background-color: #89836d;
       color: black;
       transition: background-color 0.3s ease;
     }
@@ -269,7 +266,7 @@
 
 
     .btn-gelo {
-      background-color: #98D8D8;
+      background-color: #5da5a5;
       color: black;
       transition: background-color 0.3s ease;
     }
@@ -280,15 +277,20 @@
 
 
     .btn-dragao {
-      background-color: #7038F8;
+      background-color: #eff838;
       color: black;
       transition: background-color 0.3s ease;
     }
     .btn-dragao:hover {
-      background-color: #8e62f9;
+      background-color: #d9e312;
       color: black;
     }
 
+    .footer{
+      margin-top: 20px;
+      font-size: 15px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
     footer {
       position: fixed;
       bottom: 0;
@@ -296,9 +298,7 @@
       background-color: #212529;
       color: white;
       text-align: center;
-      padding: 10px;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 10px;
+      padding: 5px;
     }
   </style>
 </head>
@@ -522,21 +522,6 @@
       </div>
     </div>
 
-    <!-- Link para form.html -->
-    <div class="categoria form-link">
-      <i class="fas fa-pencil-alt icone"></i>
-      <h3>Formulário</h3>
-      <a href="form/form.html" class="btn btn-info btn-acessar">
-        Acesse <i class="fas fa-arrow-right"></i>
-      </a>
-      <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#descricao-form">
-        Mostrar mais
-      </button>
-      <div class="collapse" id="descricao-form">
-        <p class="mensagem">Clique em "Acesse" para adicionar um novo Pokémon à Pokédex através do formulário.</p>
-      </div>
-    </div>
-
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -546,7 +531,7 @@
   </div>
 
   <footer>
-    <p>© 2025 Projeto Pokémon | Desenvolvido por Giovana e Isabela</p>
+    <p class="footer">© 2025 Projeto Pokémon | Desenvolvido por Giovana e Isabela</p>
   </footer>
 
 </body>
